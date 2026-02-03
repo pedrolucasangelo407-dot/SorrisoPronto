@@ -1,45 +1,174 @@
-
-/* Seções */
-section { padding:60px 20px; max-width:1200px; margin:0 auto; }
-h2 { text-align:center; margin-bottom:40px; font-size:2rem; }
-
-/* Serviços */
-.services { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
-.service-card { background:#f8f8f8; border-radius:10px; overflow:hidden; text-align:center; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
-.service-card img { width:100%; height:200px; object-fit:cover; border-top-left-radius:10px; border-top-right-radius:10px; }
-.service-card h3 { margin:15px 0; }
-.service-card p { margin:10px 0; }
-.service-card .price { font-weight:bold; color:#28a745; }
-
-/* Equipe */
-.team { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
-.team-card { text-align:center; background:#f8f8f8; padding:15px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
-.team-card img { width:100%; height:180px; object-fit:cover; border-radius:10px; margin-bottom:10px; }
-
-/* Depoimentos */
-.testimonials { display:flex; flex-direction:column; gap:20px; }
-.testimonial { background:#e9ecef; padding:20px; border-radius:10px; }
-.testimonial p { font-style:italic; }
-.testimonial span { display:block; margin-top:10px; font-weight:bold; text-align:right; }
-
-/* CTA final */
-.cta { background:#28a745; color:white; text-align:center; padding:50px 20px; }
-.cta a { background:#fff; color:#28a745; padding:15px 25px; border-radius:8px; font-size:1.2rem; transition: all 0.3s ease; display:inline-block; }
-.cta a:hover { background:#1fa43c; color:white; transform: translateY(-2px); }
-
-/* Footer */
-footer { background:#333; color:white; text-align:center; padding:40px 20px; }
-footer a { color:#28a745; }
-
-/* Responsivo */
-@media(max-width:768px){
-  .hero h1 { font-size:2rem; }
-  .pain-text { font-size:1.1rem; }
-  .convince-text { font-size:0.9rem; }
-  .btn, .service-btn { font-size:0.9rem; padding:10px 20px; }
-  .service-card img, .team-card img { height:150px; }
+/* ==============================
+   Seções específicas do site
+   ============================== */
+.section-wrapper {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-#localizacao iframe{
+
+.section-wrapper h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+/* ==============================
+   Serviços
+   ============================== */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background: #f8f8f8;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.service-card h3 {
+  margin: 15px 0;
+}
+
+.service-card p {
+  margin: 10px 0;
+}
+
+.service-card .price {
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* ==============================
+   Equipe
+   ============================== */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.team-card {
+  text-align: center;
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.team-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* ==============================
+   Depoimentos
+   ============================== */
+.testimonials-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.testimonial {
+  background: #e9ecef;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.testimonial p {
+  font-style: italic;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* ==============================
+   CTA final
+   ============================== */
+.cta-wrapper {
+  background: #28a745;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.cta-wrapper a {
+  background: #fff;
+  color: #28a745;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.cta-wrapper a:hover {
+  background: #1fa43c;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ==============================
+   Footer específico
+   ============================== */
+.footer-wrapper {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.footer-wrapper a {
+  color: #28a745;
+}
+
+/* ==============================
+   Responsivo
+   ============================== */
+@media(max-width:768px){
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .pain-text {
+    font-size: 1.1rem;
+  }
+  .convince-text {
+    font-size: 0.9rem;
+  }
+  .btn, .service-btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+  .service-card img,
+  .team-card img {
+    height: 150px;
+  }
+}
+
+/* ==============================
+   Localização (mapa)
+   ============================== */
+#localizacao iframe {
   display: block;
   width: 100%;
   height: 420px;
