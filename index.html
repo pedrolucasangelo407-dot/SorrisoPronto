@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clínica OdontoPrime</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    Clínica OdontoPrime
+    <span class="site-example">Site exemplo</span>
+  </div>
+
+  <div class="hamburger" id="hamburger">
+    ☰
+  </div>
+
+  <nav id="nav-menu">
+    <a href="#servicos">Serviços</a>
+    <a href="#equipe">Equipe</a>
+    <a href="#avaliacoes">Avaliações</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Sorrisos confiantes começam aqui</h1>
+    <p>Tecnologia moderna, atendimento humanizado e estrutura premium.</p>
+    <a href="https://wa.me/5545991002660" class="btn">Agendar Consulta</a>
+  </div>
+
+  <img src="images/paciente.satisfeita.png" alt="Paciente satisfeita" class="hero-img">
+</section>
+
+<section id="servicos">
+  <h2>Nossos Serviços</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="images/clareamento.png" alt="Clareamento">
+      <h3>Clareamento Dental</h3>
+      <p>Sorriso até 3 tons mais branco na primeira sessão.</p>
+      <a href="https://wa.me/5545991002660" class="card-btn">Quero esse tratamento</a>
+    </div>
+
+    <div class="card">
+      <img src="images/aparelho.png" alt="Ortodontia">
+      <h3>Ortodontia</h3>
+      <p>Alinhamento eficiente com tecnologia moderna.</p>
+      <a href="https://wa.me/5545991002660" class="card-btn">Agendar avaliação</a>
+    </div>
+
+    <div class="card">
+      <img src="images/sala.vazia.png" alt="Sala odontológica">
+      <h3>Estrutura Premium</h3>
+      <p>Consultórios modernos e ambiente confortável.</p>
+      <a href="https://wa.me/5545991002660" class="card-btn">Conhecer clínica</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="equipe">
+  <h2>Nossa Equipe</h2>
+
+  <div class="cards">
+
+    <div class="card team-card">
+      <img src="images/dentista.homem.png" alt="Dentista homem">
+      <h3>Dr. Lucas Almeida</h3>
+      <p>Especialista em Ortodontia</p>
+    </div>
+
+    <div class="card team-card">
+      <img src="images/dentista.mulher.png" alt="Dentista mulher">
+      <h3>Dra. Mariana Costa</h3>
+      <p>Especialista em Estética Dental</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="avaliacoes">
+  <h2>Depoimentos</h2>
+
+  <div class="review">
+    “Atendimento impecável. Estrutura incrível.”
+    <strong>— Ana Paula</strong>
+  </div>
+
+  <div class="review">
+    “Meu sorriso mudou completamente.”
+    <strong>— Carlos Henrique</strong>
+  </div>
+
+</section>
+
+<section id="contato">
+  <h2>Localização</h2>
+  <p>Rua Exemplo, 123 – Curitiba</p>
+
+  <iframe 
+    src="https://www.google.com/maps?q=Rua+Exemplo+123+Curitiba&output=embed"
+    width="100%" 
+    height="250"
+    loading="lazy">
+  </iframe>
+</section>
+
+<a href="https://wa.me/5545991002660" class="whatsapp-float">WhatsApp</a>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+</script>
+
+</body>
+</html>
